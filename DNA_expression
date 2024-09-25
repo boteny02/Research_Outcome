@@ -1,0 +1,20 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+#from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
+from google.colab import drive
+drive.mount('/content/drive')
+
+#read data from folder
+
+chim=pd.read_csv('/content/drive/MyDrive/dataset/DNA learning/chimpanzee.txt')
+chim.head()
+humano=pd.read_csv('/content/drive/MyDrive/dataset/DNA learning/human.txt')
+#humano.head()
+dogo=pd.read_csv('/content/drive/MyDrive/dataset/DNA learning/dog.txt')
+#dogo.head()
